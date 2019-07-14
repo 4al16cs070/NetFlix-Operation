@@ -1,0 +1,38 @@
+package pac;
+
+public class Nonpremium implements NetFlix{
+	 String name;
+	 int money;
+	 double balance;
+	 Nonpremium(String name,int money,double balance)
+	 {
+		 this.name=name;
+		 this.money=money;
+		 this.balance=balance;
+	 }
+	 @Override
+		public void payment(int amt) {
+		 int days=365;
+		 if(days<=365)
+		 {
+		 balance=balance-amt;
+			System.out.println("balance RS "+amt);
+	 }
+	 else
+	 {
+		 System.out.println("not done");
+	 }
+	 }
+			
+		@Override
+		public void check(int days) {
+			if(days<=30)
+			{
+				
+				System.out.println("continue");
+			}
+			else
+				System.out.println("recharge not done");
+			
+		}
+}
