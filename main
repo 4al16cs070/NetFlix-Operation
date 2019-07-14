@@ -1,0 +1,25 @@
+package pac;
+import java.util.Scanner;
+public class Main1236 {
+	
+	
+		public static void main(String[] args) {
+			
+			System.out.println("started");
+			Scanner sc=new Scanner(System.in);
+			System.out.println("enter ur name");
+			String name;
+			name=sc.next();
+			System.out.println("enter type");
+			char ch=sc.next().charAt(0);
+			System.out.println("enter days");
+			int wc;
+			wc=sc.nextInt();
+			
+			
+			NetFlix ref=Manager.createPremium(name,111,9000,ch);
+			ref.payment(12356);
+			ref.check(wc);
+			
+		}
+}
