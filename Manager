@@ -1,0 +1,20 @@
+package pac;
+
+public class Manager {
+	static NetFlix createPremium(String name,int money,double balance,char type)
+	{
+		NetFlix n=null;
+		if(type=='p')
+		{
+			n=new Premium(name,money,balance);
+			System.out.println("premium");
+		}
+		else
+		{
+			n=new Nonpremium(name,money,balance);
+			System.out.println("non premium");
+		}
+		return n;
+	}
+
+}
